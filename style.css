@@ -1,0 +1,51 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.orange-color {
+  color: orange;
+}
+
+section {
+  display: flex;
+}
+
+.half-width {
+  padding-right: 10%;
+}
+
+.half-width img {
+  width: 130%;
+
+}
+
+.hire-button {
+  text-decoration: none;
+  background-image: linear-gradient(orange, tomato);
+  color: white;
+  font-weight: bold;
+  background-color: coral;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.top-banner {
+  background-image: url(Images/top-banner.png);
+  background-repeat: no-repeat;
+}
+
+.half-width1 {
+  padding-right: 10%;
+}
+
+.dream-big {
+  background-image: url(Images/dream-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
