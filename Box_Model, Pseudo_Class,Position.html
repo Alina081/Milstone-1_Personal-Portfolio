@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        class {
+            background-color: bisque;
+            width: 300px;
+            height: 250px;
+            padding-top: 35px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            background-color: mistyrose;
+            border: 25px solid red;
+
+        }
+
+        h2 {
+            background-color: mediumpurple;
+        }
+
+        p {
+            background-color: rgb(179, 220, 135);
+        }
+
+        span {
+            background-color: bisque;
+        }
+
+        h1:hover {
+            color: chartreuse;
+            background-color: blue;
+            margin: 50px;
+            padding: 50px;
+            font-weight: 700;
+            font-size: 900;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .middle-person:focus {
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        .visit:visited {
+            color: red;
+        }
+
+        li:first-child {
+            color: chocolate;
+        }
+
+        li:last-child {
+            background-color: cornflowerblue;
+        }
+
+        li:nth-child(2n) {
+            color: crimson;
+            background-color: aqua
+        }
+
+        li:nth-child(2n+1) {
+            background-color: darkseagreen;
+        }
+
+        h4::before {
+            content: 'Hello ';
+        }
+
+        h4::after {
+            content: '  End';
+            background-color: bisque;
+            font-size: 25px;
+        }
+
+        h5 {
+            font-size: x-large;
+        }
+
+        .swiming div {
+            border: 1px dashed cornflowerblue;
+            width: 200px;
+        }
+
+        #ring {
+            position: sticky;
+            left: 0px;
+            top: 100px;
+        }
+
+        .water {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            z-index: 20;
+        }
+
+        .dummy {
+            height: 150px;
+            width: 250px;
+            background-color: pink;
+        }
+
+        .boy {
+            position: relative;
+            z-index: 20;
+        }
+    </style>
+    <!--h4::before এটা হলো pseudo elemnet. pseudo elemnet এর :: দিতে হয় -->
+    <!--(2n) = Odd-->
+</head>
+
+<body>
+    <h1 class="bonus">Boro Mama</h1>
+    <h1 class="bonus">Boro Khalu</h1>
+    <span class="bonus_s">Ami</span>
+    <span class="bonus_s">choto vai</span>
+    <span class="bonus_s">choto bon</span>
+    <p>this is ......</p>
+
+    <a href="www.youtube.com"> Go To Youtube</a>
+    <a href="ww.youtube.com"> Go To Youtube</a>
+    <a href="ww.youtube.com"> Go To Youtube</a>
+    <a href="ww.youtube.com"> Go To Youtube</a>
+    <br>
+    <a class="bonus_a" href="www.google.com">Go to Google</a>
+    <a class="bonus_a" href="www.google.com">Go to Google</a>
+    <a class="bonus_a" href="www.google.com">Go to Google</a>
+    <a class="bonus_a" href="www.google.com">Go to Google</a>
+
+    <!--ul>li*3{item-$}-->
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+    </ul>
+    <div class="room">
+        <h2>Room-1</h2>
+        <p>staying some one</p>
+    </div>
+    <div class="room">
+        <h2>Room-2</h2>
+        <p>staying some one</p>
+    </div>
+    <div class="room">
+        <h2>Room-3</h2>
+        <p>staying some one</p>
+    </div>
+    <br><br><br>
+    <input type="text">
+    <input class="middle-person" type="text">
+
+    <input type="text">
+    <br><br>
+    <a target="_blank" class="visit" href="https://www.youtube.com/"> Go to youtube</a>
+    <a target="_blank" class="visit" href="https://www.google.com/">Go to google</a>
+    <a class="visit" href="https://www.underconsideration.com/brandnew/">Never Visited</a>
+
+
+
+    <section>
+        <h3> First child, nth child pseudo elements before after</h3>
+
+        <h4>middle size header -1</h4>
+        <h4>middle size header -2</h4>
+        <h4>middle size header -3</h4>
+        <h4>middle size header -4</h4>
+        <h4>middle size header -5</h4>
+        <h4>middle size header -6</h4>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+            <li>Item-8</li>
+            <li>Item-9</li>
+            <li>Item-10</li>
+            <li>Item-11</li>
+            <li>Item-12</li>
+        </ul>
+    </section>
+    <br><br>
+    --> Position static, absolute,fixed, sticky,z-index
+    <section>
+        <h5>This is my book</h5>
+        <h5>This is my book</h5>
+        <h5>This is my book</h5>
+    </section>
+    <section class="swiming">
+        <div class="boy"><img src="Images/boy.svg" alt=""></div>
+        <div id="ring"><img src="Images/ring.svg" alt=""></div>
+        <div class="water"><img src="Images/water.svg" alt=""></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+
+
+
+    <section>
+        <h2>this is seperate</h2>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+</body>
+
+</html>
